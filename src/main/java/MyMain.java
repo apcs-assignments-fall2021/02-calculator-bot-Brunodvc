@@ -4,18 +4,32 @@ public class MyMain {
 
     // Calculates the median of the three inputs
     public static int median(int a, int b, int c) {
-        return 0; // REPLACE WITH YOUR CODE
-    }
+        if (a > b && a < c || a > c && a < b) {
+           return a;
+        }
+        else if (b > c && b < a || b < c & b > a) {
+            return b;
+        }
+        else{
+            return c;
+            }
+        }
+
+
 
     // Returns the input with the larger absolute value
     public static int magnitude(int a, int b) {
-        return 0; // REPLACE WITH YOUR CODE
+        if (Math.abs(a) > Math.abs(b)){
+            return a;
+        }
+        else
+            return b;
     }
 
     // Returns the "c" value from the Pythagorean theorem "a^2 + b^2 = c^2",
     // where "a" and "b" are the inputs to the method
     public static double pythagoras(int a, int b) {
-        return 0.0; // REPLACE WITH YOUR CODE
+        return Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
     }
 
     public static void main(String[] args) {
